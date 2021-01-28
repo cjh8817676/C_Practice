@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1611153166 source:c:\users\jonat\onedrive\орн▒\c_datastructure\list\main.c
+	<assert.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"List.h"
+
+1611153246 c:\users\jonat\onedrive\орн▒\c_datastructure\list\list.h
+

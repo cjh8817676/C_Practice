@@ -1,0 +1,14 @@
+可以比對ptrfunc1.c的"char* change" 與 my_test_ptrfunc2.c "void (*func)(void)"、"void (*funcptr[3])(void)" 的指標函式使用方法
+
+
+ptrfunc1.c的"char* change" 解說:                  change 是一個會回傳  char指標的  函式
+若是把"char* change" 改成 "char (*change)(void)": 就會變成 change 是一個指標，指向 一個函數 其回傳資料型態為char的指標
+                                        ~-----
+
+
+my_test_ptrfunc2.c的 "void (*func)(void)" 解說: func 是一個「函數指標」，目前指向"void 函數"，而為甚麼說他是"函數"指標，是因為我們有給它一個引數(void)
+                                 ~~----> 將指標變成「函數指標」
+心得 :
+括號的重要性
+
+
