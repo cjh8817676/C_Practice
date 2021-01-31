@@ -33,10 +33,17 @@ struct employee *count(struct employee person)
 {
     person.taxes=person.gross_income * person.tax_rate;
     person.net_income=person.gross_income - person.taxes;
-    return(&person);  /*The return statement should not return a pointer that has the address of a local variable (person) because, 
+    struct employee *person2;
+    person2 = (struct employee * )malloc(sizeof(struct employee));  /* malloc 會在這個函式所在的記憶體之外 配置記憶體
+                                                                        所以person2不會隨著該函示結束而消失*/
+
+    person2->taxes = person.taxes;
+    person2->net_income = person.net_income;
+    return(person2);  
+    /*return(&person);  The return statement should not return a pointer that has the address of a local variable (person) because, 
                         as soon as the function exits, all local variables are destroyed 
                         and your pointer will be pointing to someplace in the memory that you no longer own.*/
-    /*這個程式是有錯的，原因出在local variable的問題*/
+    /*直接return(&person)是有錯的，原因出在local variable的問題*/
     
 }
 
