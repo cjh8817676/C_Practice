@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "List.h"
+#include "List.c"
 
 void print_list(char **array)
 {

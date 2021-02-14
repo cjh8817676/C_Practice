@@ -14,6 +14,7 @@ typedef struct{
 int main()
 {
     struct myStruct first_struct;
+    struct myStruct first_struct2;
     myStruct2 second_struct;
 
     printf("input employee's one:") ;
@@ -32,6 +33,11 @@ int main()
 
     printf(" employee2 phone : %d \n",second_struct.one) ;
     printf(" employee2 age : %d \n",second_struct.two);
+
+    first_struct2 = first_struct;
+
+    printf(" employee2 phone : %d \n",first_struct2.one) ;
+    printf(" employee2 age : %d \n",first_struct2.two);
 
 
 

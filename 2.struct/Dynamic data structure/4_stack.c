@@ -4,7 +4,7 @@
 
 void push(void);
 void pop(void);
-void kist(void);
+void list(void);
 
 struct node
 {

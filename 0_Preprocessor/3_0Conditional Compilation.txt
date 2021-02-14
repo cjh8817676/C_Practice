@@ -1,0 +1,7 @@
+#ifdef
+
+#if
+
+#line directive
+
+#error directive

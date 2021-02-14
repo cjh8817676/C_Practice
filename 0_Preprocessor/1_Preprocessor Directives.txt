@@ -1,0 +1,17 @@
+底下列出C 語言的 preprocessor directives :
+
+#define     定義 Macro
+#undefine   解除 Macro 定義
+#include    引入 Header File
+
+#if         |\
+#ifdef      | \
+#ifndef     |  \-->  Conditional Compilation
+#else       |  /
+#elif       | /
+#endif      |/
+
+#line       設定行號
+#error      設定編譯錯誤及錯誤訊息
+#pragma     編譯狀況設定
+
